@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* --azulClaro: #00a9d4; */
+    --azulClaro: #004AAD;
+    --azulEscuro: #240047;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+nav{
+    /* padding: 0; */
+    display: flex;
+    background-color: var(--azulClaro);
+    width: 100%;
+    color: white;
+
+    }
+
+    nav div{
+        width: 50%;
+
+    }
+
+    #d-logo{
+        /* display: flex; */
+        padding-left: 3vw;
+        justify-content: start;
+    }
+    #d-logo li{
+        position: absolute;
+    }
+
+        #h-logo{
+            font-size: 3vw;
+            padding: 2vw;
+        }
+
+    #d-links{
+        display: flex;
+        justify-content: end;
+        padding-right: 3vw;
+    }
+
+    #d-links a {
+        text-decoration: none;
+    }
+
+    #d-links p{
+        font-weight: bolder;
+        padding: 1vw;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #d-links p:hover{
+        transform: translateY(-4px);
+        color: #599ef8;
+    }
+/* =========================== Segunda sessão - backgroundImage =========================== */
+
+
+#s-backgroundImage{
+
+    /* background: url('https://www.armecanica.com.br/blog/wp-content/uploads/2021/09/painel-distribuicao-energia-2.jpg')  */
+    /* background: url('images/IndustriaBlur.png') */
+    background: url('images/Eletricista.jpg')
+    center center no-repeat fixed;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+
+    animation: backgroundAnimation 2s;
+    
+}
+
+
+#s-backgroundImage h1{
+    z-index: -1;
+    padding: 2vw;
+    margin-left: 4vw;
+    text-align: start;
+    margin-right: 4vw;
+    color: white;
+    margin-bottom: 0;
+
+}
+ 
+@keyframes transformation{
+    0%{
+        transform: translateX(0px);
+        color: white;
+    }
+
+    25%{
+        transform: translateX(-10px);
+        /* color: rgb(208, 255, 0);         */
+    }
+
+    50%{
+        transform: translateX(10px);
+        /* color: rgb(240, 164, 0);         */
+    }
+
+    75%{
+        transform: translateX(-10px);
+        /* color: rgb(255, 7, 7);       */
+    }
+
+    100%{
+        transform: translateX(0px);
+        /* color: white;         */
+    }
+}
+
+#s-backgroundImage h1:nth-child(1){
+    animation: transformation 3s;
+    /* display: none; */
+}
+
+#s-backgroundImage h1:nth-child(2){
+    animation: transformation 3s;
+    animation-delay: 3s;
+}
+
+#s-backgroundImage h1:nth-child(3){
+    animation: transformation 3s;
+    animation-delay: 6s;
+}
+
+
+
+
+
+
+/* =============================== Interruptor ===============================*/
+
+#container{
+    width: 5%;
+    background-color: white;
+    border-radius: 2vw;
+    height: 1vw;
+    margin-top: 1.5vw;
+}
+
+.botao{
+    background-color: #240047;
+    width: 5%;
+    padding: 0.5vw;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 1.3vw;
+    box-shadow: 0px 0px 3px rgb(51, 51, 51);
+}
+
+.mover{
+    background-color: #240047;
+    width: 5%;
+    padding: 0.5vw;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 0vw;
+    box-shadow: 0px 0px 3px rgb(51, 51, 51);
+}
+
+
+/* =========================== Quarta sessão - Servicos =========================== */
+
+#s-servicos{
+
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: var(--azulEscuro);
+    /* background-color: var(--azulEscuro); */
+
+    /* transform: translateY(-40px); */
+}
+
+#s-servicos #card{
+    display: flex;
+    margin: auto;
+    padding: 2vw;
+    text-align: center;
+
+}
+
+#card div{
+    margin: auto;
+    border-left: 2px solid var(--azulEscuro);
+    padding: 1vw;
+}
+
+ul li{
+    text-align: start;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    list-style: square;
+}
+
+#s-descricaoServicos{
+    background: url('images/Eletricista.jpg')
+    center center no-repeat fixed;
+    background-size: cover;
+
+    display: flex;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 1vw; */
+    padding-top: 1vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#s-descricaoServicos div div{
+    width: 60%;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+
+}
+
+#s-descricaoServicos div h2, p{
+    /* background-color: white; */
+    padding: 1vw;
+    
+}
+
+#s-descricaoServicos div h2{
+    padding-top: 2vw;
+}
+
+.d-ds{
+    background-color: white;
+    border-radius: 2vw;
+}
+
+/* =========================== Terceira sessão - Sobre =========================== */
+
+#s-sobre{
+    width: 95%;
+    /* background-color: rgb(247, 246, 246); */
+    margin: auto;
+    color: var(--azulEscuro);
+    border-bottom: 3px groove rgb(255, 230, 0);
+    border-top: 3px groove rgb(255, 230, 0);
+    border-radius: 2vw;
+}
+
+#h2-Sobre{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1vw;
+    /* margin-top: 2vw; */
+    /* border-bottom: 1px solid #240047; */
+}
+
+#d-sobre{
+    display: flex;
+    padding-top: 2vw;
+    text-align: center;
+    margin: auto;
+    /* font-size: 1rem; */
+    width: 100%;
+}
+#d-sobre div:first-child{
+    width: 60%;
+    padding: 4vw;
+}
+
+/* #imgsobre{
+    width: 50%;
+} */
+
+span{
+    font-weight: bolder;
+}
+
+
+/* ====================== */
+
+#s-effect{
+    display: flex;
+}
+
+.bookImage{
+    width: 100%;
+}
+
+#d-traco{
+    border: 2px solid var(--azulEscuro);
+    width: 30%;
+    margin: auto;
+    margin-top: 2vw;
+    background: url('images/gifs-de-efeitos-especiais-27.gif') no-repeat center center;
+    padding: 0.1vw;
+
+
+}
+
+.effect{
+    padding-top:7vw;
+    margin: auto;
+    width: 0.3%;
+    background: url('images/gifs-de-efeitos-especiais-27.gif') no-repeat center center;
+    box-shadow: 0px 0px 5px rgb(233, 211, 12);
+}
+
+
+/* ============================== Carrossel ============================== */
+
+#s-carrossel{
+
+    width:40%;
+    margin: auto;
+    margin-top: 2vw;
+    box-shadow: 0px 0px 15px rgb(189, 189, 189);
+    margin-bottom: 2vw;
+}
+
+.slide{
+    width: 100%;
+    margin: auto;
+
+}
+
+.slide img{
+
+    padding: 1vw;
+    
+}
+
+.descricao{
+    background-color: white;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+
+}
+
+.descricao h5, p{
+    color: var(--azulEscuro);
+}
+
+/* ========================== Footer ==========================  */
+
+
+footer{
+    width: 10%;
+    display: flex;
+    
+}
+
+footer div{
+    display: flex;
+    width: 100%;
+
+}
+
+#s-contato{
+    background-color: var(--azulEscuro);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#s-contato p{
+    color: white;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+}
+
+#chatWhatsapLogo{
+
+    width: 18%;
+    position: absolute;
+    left: 80%;
+    top: 171vw;
+}
