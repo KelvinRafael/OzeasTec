@@ -28,19 +28,46 @@ nav{
 
     }
 
-    #d-logo{
-        /* display: flex; */
-        padding-left: 3vw;
-        justify-content: start;
-    }
-    #d-logo li{
-        position: absolute;
+    @keyframes lumos{
+        0%{
+            color: black;
+            opacity: 0;
+        }
+
+        50%{
+            color: white;
+            text-shadow: rgb(255, 255, 255) 1px 0px 10px;
+            opacity: 1;
+        }
+
+        100%{
+            color: black;
+            opacity: 0;
+        }
     }
 
-        #h-logo{
-            font-size: 3vw;
-            padding: 2vw;
-        }
+    #o-efect{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        background-color: var(--azulEscuro);
+    }
+
+    #o-efect p{
+
+        color: black;
+        font-weight: bolder;
+        animation: lumos 4s ease-out infinite;
+    }
+
+    #d-logo{
+        display: flex;
+        padding-left: 3vw;
+        justify-content: start;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
 
     #d-links{
         display: flex;
@@ -49,6 +76,7 @@ nav{
     }
 
     #d-links a {
+        font-size: 1em;
         text-decoration: none;
     }
 
@@ -365,6 +393,9 @@ footer div{
 }
 
 #s-contato{
+    display: flex;
+    /* background-color: var(--azulEscuro); */
+    justify-content: center;
     background-color: var(--azulEscuro);
     width: 100%;
     margin: 0;
@@ -372,16 +403,32 @@ footer div{
 }
 
 #s-contato p{
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
     margin: 0;
-    padding: 1%;
+    padding-top: 4%;
     text-align: center;
 }
 
-#chatWhatsapLogo{
+/* #chatWhatsapLogo{
 
     width: 18%;
     position: absolute;
     left: 80%;
     top: 171vw;
+} */
+
+#gif{
+
+    width: 70%;
+    text-align: center;
+    margin: auto;
+
+}
+
+video{
+    width: 50%;
+    text-align: center;
+    /* margin: auto; */
+
 }
