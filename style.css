@@ -69,6 +69,10 @@ nav{
         padding-bottom: 1vw;
     }
 
+    #logo{
+        width: 30%;
+    }
+
     #d-links{
         display: flex;
         justify-content: end;
@@ -206,9 +210,8 @@ nav{
     text-align: center;
     margin: auto;
     color: var(--azulEscuro);
-    /* background-color: var(--azulEscuro); */
-
-    /* transform: translateY(-40px); */
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 
 #s-servicos #card{
@@ -392,23 +395,29 @@ footer div{
 
 }
 
-#s-contato{
+#section-contato{
     display: flex;
     /* background-color: var(--azulEscuro); */
     justify-content: center;
     background-color: var(--azulEscuro);
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-top: 3vw;
 }
 
-#s-contato p{
+#section-contato p{
     color: rgb(255, 255, 255);
+    font-size: 70%;
     font-weight: 400;
     margin: 0;
+    padding: 2;
     padding-top: 4%;
     text-align: center;
 }
+
+#section-contato div p a{
+    text-decoration: none;
+}
+
 
 /* #chatWhatsapLogo{
 
@@ -431,4 +440,25 @@ video{
     text-align: center;
     /* margin: auto; */
 
+}
+
+#linksMobile{
+    display: none;
+}
+
+@keyframes sumir {
+    from{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.SumirMenu{
+
+    animation: sumir 2s both;
 }

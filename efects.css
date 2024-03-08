@@ -1,0 +1,141 @@
+.s-container{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(71, 167, 47);
+    padding: 4vw;
+
+}
+
+.d-container{
+
+    width: 20%;
+    max-height: 4vh;
+    margin-top: 1vw;
+    /* border-radius: 1vw; */
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.btn-lumos{
+
+    background-color: rgb(102, 98, 98);
+    width: 40%;
+    height: 7vh;
+    border-radius: 50%;
+    border: 10px groove rgb(146, 144, 144);
+    /* margin-left: 5vw; */
+
+}
+
+/* @keyframes mover {
+
+    from{
+        margin-left: 0vw;
+    }
+
+    to{
+        margin-left: 1vw;
+    }
+} */
+
+/* .active{
+    animation: mover 1s both;
+       
+}
+
+.deactive{
+    animation: mover 2s both reverse;
+} */
+
+
+@keyframes colorNav{
+    0%{
+        background-color: #004AAD;
+        color: white;
+    }
+
+    50%{
+        background-color: rgb(31, 29, 29);
+        color: white;
+    }
+
+    100%{
+        background-color: #004AAD;
+        color: white;
+    }
+}
+
+.nav{
+    animation: colorNav 3s;
+}
+
+@keyframes color{
+    0%{
+        /* background-color: #ffffff; */
+        color: white;
+    }
+
+    50%{
+        background-color: rgb(31, 29, 29);
+        color: white;
+    }
+
+    100%{
+        background-color: #ffffff;
+    }
+}
+
+#s-servicos, body{
+    animation: color 3s;
+}
+
+@keyframes textColor{
+    from{
+        color: white;
+    }
+
+    to{
+        color: #240047;
+    }
+}
+
+#d-residencial li{
+    animation: textColor 2s;
+}
+
+
+/* .btnEscuro{
+    background-color: white;
+    border: 5px groove white;
+    color: white;
+}
+
+
+.actived{
+
+    animation: color 2s both;
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+
+.deactive{
+    animation: color 2s reverse both;
+} */
+
+/* ========================== Mouse hover ========================== */
+
+@keyframes surgir {
+    
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ActiveEffect{
+    animation: surgir 4s;
+}

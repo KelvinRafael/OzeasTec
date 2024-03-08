@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozeas Tec</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="efects.css">    
+    <link rel="stylesheet" href="media.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -14,25 +17,25 @@
     
     <link rel="shortcut icon" href="images/LogoOzeas.png" type="image/x-icon">
 </head>
-<body>
+<body id="body">
 
     <!-- Ela comecará escura e ficará clara no final, mas terá também um botão para ser aceso ou apagado. -->
 
-    <nav id="nav">
+    <nav class="nav">
 
         <div id="d-logo">
-            <h1>Ozeas Tec</h1>
-            <!-- <img src="images/LogoOzeas.png" alt="" id="logo"> -->
+            <!-- <h1>Ozeas Tec</h1> -->
+            <img src="images/Logo Ozeas Tec (1).png" alt="" id="logo">
         </div>
 
         <div id="d-links">
             <a href="#s-servicos"><p>Servicos</p></a>
             <a href="#s-sobre"><p>Sobre mim</p></a>
-            <a href="#s-contato"><p>Contato</p></a>
+            <a href="#section-contato"><p>Contato</p></a>
             
-            <div id="container">
-                <div class="botao" onclick="moving()"></div>
-            </div>
+            <!-- <div class="d-container">
+                <div class="btn-lumos"></div>
+            </div> -->
         </div>
 
     </nav>
@@ -71,7 +74,6 @@
                 </div>
     
             </div>
-
 
     </section>
 
@@ -114,14 +116,6 @@
 
         </div>
 
-    </section>
-
-    <section id="s-effect">
-
-        <!-- <div class="effect"></div> -->
-        <!-- <div class="effect"></div> -->
-        <!-- <div class="effect"></div> -->
-        
     </section>
 
     <section id="s-sobre">
@@ -217,18 +211,16 @@
         <a href="https://contate.me/ozeastecc" target="_blank"><video src="video/IconeWhatsappGif.mkv" autoplay loop></video></a>
     </div>
 
-    <section id="s-contato">
+
+    <section id="section-contato">
 
         <div>
 
             <p>Email: Ozeas@gmail.com</p>
             <p>Simões-Filho, Salvador-BA</p>
-            <p><a href="instagram.com" target="_blank">@ozeasTec</a></p>
+            <p><a href="https://www.instagram.com/ozeaseletric?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@ozeasTec</a></p>
 
         </div>
-
-        <!-- <a href="https://contate.me/ozeastecc" target="_blank"><img src="images/WhatsappLogo.png" alt="" id="chatWhatsapLogo"></a> -->
-
 
     </section>
 
@@ -245,6 +237,15 @@
         <P>C</P>
     </div>
 
+    <nav class="linksMobile">
+        <a href="#s-servicos"><p>Servicos</p></a>
+        <a href="#s-sobre"><p>Sobre mim</p></a>
+        <a href="#section-contato"><p>Contato</p></a>
+    </nav>
+
+    <section id="modalContatos">
+
+    </section>
 
 </body>
 <script src="scripts.js"></script>
