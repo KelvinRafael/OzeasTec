@@ -12,10 +12,12 @@
         border-radius: 0;
     }
 
-    #s-sobre div{
-        margin: auto;
+    #s-sobre{
+
         width: 100%;
+
     }
+
 
     .d-ds{
 
@@ -34,7 +36,8 @@
     }
 
     #s-sobre{
-        display: none;
+        /* display: none; */
+        font-size: 2.3vw;
     }
 
     #s-carrossel{
