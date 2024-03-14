@@ -82,11 +82,12 @@ nav{
     #d-links a {
         font-size: 1em;
         text-decoration: none;
+        padding: 0;
     }
 
     #d-links p{
         font-weight: bolder;
-        padding: 1vw;
+        /* padding: 1vw; */
         color: white;
         cursor: pointer;
     }
@@ -95,6 +96,28 @@ nav{
         transform: translateY(-4px);
         color: #599ef8;
     }
+
+    #d-links div{
+        padding-top: 2vw;
+        justify-content: space-between;
+        margin: 0;
+        width: 30%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .icon{
+        width: 10%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        align-items: end;
+        text-align: end;
+        justify-content: end;
+        filter: invert(1);
+        /* justify-content: space-around; */
+    }
 /* =========================== Segunda sessão - backgroundImage =========================== */
 
 
@@ -102,7 +125,7 @@ nav{
 
     /* background: url('https://www.armecanica.com.br/blog/wp-content/uploads/2021/09/painel-distribuicao-energia-2.jpg')  */
     /* background: url('images/IndustriaBlur.png') */
-    background: url('images/Eletricista.jpg')
+    background: url('images/Eletricista.png')
     center center no-repeat fixed;
     background-size: cover;
     margin: auto;
@@ -166,42 +189,6 @@ nav{
     animation-delay: 6s;
 }
 
-
-
-
-
-
-/* =============================== Interruptor ===============================*/
-
-#container{
-    width: 5%;
-    background-color: white;
-    border-radius: 2vw;
-    height: 1vw;
-    margin-top: 1.5vw;
-}
-
-.botao{
-    background-color: #240047;
-    width: 5%;
-    padding: 0.5vw;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 1.3vw;
-    box-shadow: 0px 0px 3px rgb(51, 51, 51);
-}
-
-.mover{
-    background-color: #240047;
-    width: 5%;
-    padding: 0.5vw;
-    border-radius: 50%;
-    display: flex;
-    margin-left: 0vw;
-    box-shadow: 0px 0px 3px rgb(51, 51, 51);
-}
-
-
 /* =========================== Quarta sessão - Servicos =========================== */
 
 #s-servicos{
@@ -260,7 +247,7 @@ ul li{
 
 #s-descricaoServicos div h2, p{
     /* background-color: white; */
-    padding: 1vw;
+    /* padding: 1vw; */
     
 }
 
@@ -461,4 +448,23 @@ video{
 .SumirMenu{
 
     animation: sumir 2s both;
+}
+
+#linkInstagram{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+}
+
+#linkInstagram svg{
+    width: 10%;
+    margin: auto;
+    justify-content: end;
+    margin-left: 0;
+    margin-right: 0;
+    filter: invert(1);
+
+
 }

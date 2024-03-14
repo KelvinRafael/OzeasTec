@@ -4,6 +4,10 @@
         display: block;
     }
 
+    #d-titles h1 {
+        /* color: #240047; */
+    }
+
     #s-descricaoServicos div div{
         width: 100%;
         border-top: 1px solid black;
@@ -16,6 +20,19 @@
 
         width: 100%;
 
+    }
+
+
+    #s-backgroundImage{
+
+        /* background: url('https://www.armecanica.com.br/blog/wp-content/uploads/2021/09/painel-distribuicao-energia-2.jpg')  */
+        /* background: url('images/IndustriaBlur.png') */
+        background: url('images/Eletricista.png')
+        center center no-repeat;
+        background-size: cover;
+        margin: auto;
+        width: 100%;
+        
     }
 
 
@@ -75,9 +92,11 @@
     .linksMobile{
         display: flex;
         position: fixed;
-        top: 95%;
+        top: 92%;
         left: 8vw;
         width: 80%;
+
+        padding: 2vw;
 
         border-top-left-radius: 1vw;
         border-top-right-radius: 1vw;
@@ -89,11 +108,18 @@
 
     .linksMobile p{
         color: aliceblue;
-        padding: 1vw;
+        /* padding: 1vw; */
         margin: 0;
     }
 
     .linksMobile a{
         text-decoration: none;
+        text-align: center;
+    }
+
+    .icon{
+        width: 15%;
+        margin: auto;
+        /* padding-bottom: 4vw; */
     }
 }
