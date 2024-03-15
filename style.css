@@ -51,6 +51,7 @@ nav{
         width: 100%;
         justify-content: center;
         margin: auto;
+        padding-top: 2vw;
         background-color: var(--azulEscuro);
     }
 
@@ -92,10 +93,10 @@ nav{
         cursor: pointer;
     }
     
-    #d-links p:hover{
+    /* #d-links p:hover{
         transform: translateY(-4px);
         color: #599ef8;
-    }
+    } */
 
     #d-links div{
         padding-top: 2vw;
@@ -117,6 +118,12 @@ nav{
         justify-content: end;
         filter: invert(1);
         /* justify-content: space-around; */
+    }
+
+    #d-links div:hover{
+        transform: translateY(-4px);
+        color: #599ef8;
+        background-color: rgba(14, 39, 75, 0.3);
     }
 /* =========================== Segunda sessão - backgroundImage =========================== */
 
